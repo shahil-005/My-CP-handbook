@@ -12,6 +12,6 @@ int main()
     std::cout.tie(NULL);
 
    
-    }
+}
     return 0;
 }
