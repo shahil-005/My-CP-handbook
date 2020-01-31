@@ -1,0 +1,36 @@
+//https://www.hackerrank.com/challenges/time-conversion/problem?isFullScreen=true
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+
+
+int main()
+{
+   string s;
+   
+    cin >> s;
+
+    int n = s.length();
+
+    int h,m,sec;
+
+    h = (s[0] - '0')*10 + (s[1] - '0');
+    m = (s[3] - '0')*10 + (s[4] - '0');
+    sec = (s[6] - '0')*10 + (s[7] - '0');
+
+    if(s[8] == 80 && h<12)
+    {
+        h += 12;
+    }
+
+    if(s[8] == 65 && h==12)
+    {
+        h = 0;
+    }
+
+     
+    printf("%02d:%02d:%02d\n", hh, mm, sec);
+    return 0;
+}

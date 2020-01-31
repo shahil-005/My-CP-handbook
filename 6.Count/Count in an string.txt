@@ -1,4 +1,0 @@
-string str = "geeksforgeeks"; 
-  
-    cout << "Number of times 'e' appears : " 
-         << count(str.begin(), str.end(), 'e');

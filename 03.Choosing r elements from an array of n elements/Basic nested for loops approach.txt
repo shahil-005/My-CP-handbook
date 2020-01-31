@@ -1,0 +1,36 @@
+long long int arraySum(long long int a[], int n)  
+{ 
+    long long int initial_sum  = 0;  
+    return accumulate(a, a+n, initial_sum); 
+}
+
+long long int smin,smax=0,sum=0;
+
+    smin = arraySum(a, 5);
+
+    for(int i=0;i<2;i++)
+    {
+        for(int j=1;j<3;j++)
+        {
+            for(int k=2;k<4;k++)
+            {
+                for(int l=3;l<5;l++)
+                {
+                    if(i !=j && i!=k && i!=l && j!=k && j!=l && k!=l)
+                    {
+                        sum = a[i] + a[j] + a[k] + a[l];
+
+                        if(sum > smax)
+                        {
+                            smax = sum;
+                        }
+
+                        if(sum < smin)
+                        {
+                            smin = sum;
+                        }
+                    }
+                }
+            }
+        }
+    }
