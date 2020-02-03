@@ -2,7 +2,6 @@
 //For example, given [(30, 75), (0, 50), (60, 150)], you should return 2.
 -------------------------------------------------------------------------------------------------------------------------------------------
 //O(N^2) Approach(https://www.geeksforgeeks.org/check-if-any-two-intervals-overlap-among-a-given-set-of-intervals/)
--------------------
 
 //Some basic pre-written functions might have been copied from www.geeksforgeeks.org or cp-algorithms.com//
 
