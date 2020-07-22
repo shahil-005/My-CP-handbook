@@ -165,7 +165,21 @@ void solve()
 	bfs(parent,level,s);
 	cout<<level[36]<<endl;
 	print(parent,36);
-	zsjifjihjhgftisif
+/*
+36
+5	//Ladders
+2 15
+5 7
+9 27
+18 29
+25 35
+5	//Snakes
+4 17
+6 20
+30 32
+12 34
+16 24
+*/
 }
 int main()
 {
