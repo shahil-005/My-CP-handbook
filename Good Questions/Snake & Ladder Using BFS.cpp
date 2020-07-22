@@ -108,7 +108,6 @@ void bfs(LL parent[],LL level[],LL start){
 void print(LL parent[], LL destination)
 {
     if (parent[destination] == -1) {
-        // We have reached the source vertex
         cout<<destination<<" -> ";
     } 
     else {
@@ -150,11 +149,11 @@ void solve()
 	for(auto &it:m){
 		VL v=it.ss;
 		sort(all(v));
-		cout<<it.ff<<" : ";
-		for(auto &i:v){
-			cout<<i<<" ";
-		}
-		cout<<endl;
+		//cout<<it.ff<<" : ";
+		//for(auto &i:v){
+		//	cout<<i<<" ";
+		//}
+		//cout<<endl;
 	}
 	LL s=0;
 	LL parent[n+1],level[n+1];
@@ -163,9 +162,40 @@ void solve()
 		level[i]=-1;
 	}
 	bfs(parent,level,s);
-	cout<<level[36]<<endl;
-	print(parent,36);
+	cout<<level[n]<<endl;
+	print(parent,n);
+}
 /*
+Test1
+100
+11
+8 11
+15 36
+20 23
+29 34
+42 64
+54 75
+70 73
+59 61
+80 82
+84 95
+90 93
+13
+1 25
+6 32
+10 55
+28 51
+35 57
+5 60
+18 76
+43 81
+46 88
+52 86
+65 94
+68 92
+26 99
+
+Test 2
 36
 5	//Ladders
 2 15
@@ -180,7 +210,6 @@ void solve()
 12 34
 16 24
 */
-}
 int main()
 {
         fastIO
